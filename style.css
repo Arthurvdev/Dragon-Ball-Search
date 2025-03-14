@@ -1,0 +1,170 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+#nome{
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    transition: 0.1s;
+}
+
+#nome:focus{
+    background-color: black;
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.1s;
+}
+
+#btn_buscar{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(-45deg, #fd823a 0%, #ffc21b 100% );
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#btn_buscar:hover{
+    background: linear-gradient(-45deg, #c2920e 0%, #a35528 100% );
+    color: white;
+    transition: 0.1s;
+    letter-spacing: 2px;
+}
+
+.conteiner_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.conteiner_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+    
+}
+
+.conteiner_2 div{
+    width: 580px;
+    height: 350px;
+    padding: 10px;
+
+}
+
+#nome_tela{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orange;
+}
+
+#genero{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orange;
+    padding-top: 2px ;
+    padding-bottom: 2px;
+}
+
+#raça{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orange;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#descricao_tela{
+    padding-top: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(36, 36, 36);
+}
+
+
+.conteiner_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+
+
+.card {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(-45deg, #1f1e1d 0%, #666361 100% );
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    
+  }
+  .card img{
+    width: 200px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card:hover {
+    transform:  scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card:hover .card__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 50px;
+    color: orange;
+    line-height: 1.4;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .card:hover svg {
+    scale: 0;
+    transform: rotate(-45deg);
+  }
+  
